@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.pentyala.hwfinal.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+
+    <RelativeLayout
+        android:id="@+id/LegislatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:visibility="invisible"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TextView
+            android:text="BY STATE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="30dp"
+            android:paddingLeft="30dp"
+            android:textStyle="bold"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:id="@+id/textView"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="BY HOUSE"
+            android:textStyle="bold"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="30dp"
+            android:paddingLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/textView2" />
+
+        <TextView
+            android:text="BY SENATE"
+            android:textStyle="bold"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="30dp"
+            android:paddingLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/textView3" />
+</RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/adi"
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:paddingTop="30dp">
+        <ListView
+            android:id="@+id/listview"
+            tools:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="16dp" />
+
+        <ListView
+            android:id="@+id/listview1"
+            tools:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="16dp" />
+        <ListView
+            android:id="@+id/listview2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="16dp" />
+
+</RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_marginTop="45dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray"
+            android:paddingTop="2dp"
+            android:layout_toRightOf="@+id/adi"
+            >
+            <ListView
+                android:id="@+id/leg_state_side_lv"
+                android:layout_width="wrap_content"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="2dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true">
+
+            </ListView>
+            <ListView
+                android:id="@+id/leg_house_side_lv"
+                android:layout_width="wrap_content"
+                android:visibility="invisible"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="2dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true">
+
+            </ListView>
+            <ListView
+                android:id="@+id/leg_senate_side_lv"
+                android:layout_width="wrap_content"
+                android:visibility="invisible"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="2dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true">
+
+            </ListView>
+
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        tools:visibility="invisible"
+        android:id="@+id/CommitteeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:text="HOUSE"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="30dp"
+            android:paddingLeft="30dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:id="@+id/textView21"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="SENATE"
+            android:textStyle="bold"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="30dp"
+            android:paddingLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/textView22" />
+
+        <TextView
+            android:text="JOINT"
+            android:textStyle="bold"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="30dp"
+            android:paddingLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/textView23" />
+
+        <ListView
+            android:id="@+id/comlistview"
+            tools:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textView21"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="16dp" />
+
+        <ListView
+            android:id="@+id/comlistview1"
+            tools:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textView21"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="16dp" />
+        <ListView
+            android:id="@+id/comlistview2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textView21"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="16dp" />
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/BillLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        tools:visibility="invisible"
+        android:layout_alignParentStart="true">
+
+
+        <ListView
+            android:id="@+id/billlistview"
+            tools:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textView31"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="16dp" />
+
+        <ListView
+            android:id="@+id/billlistview1"
+            tools:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textView31"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:text="NEW BILLS"
+            android:textStyle="bold"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="40dp"
+            android:paddingLeft="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView32"
+            android:layout_marginEnd="14dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:text="ACTIVE BILLS"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="40dp"
+            android:paddingLeft="50dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:id="@+id/textView31"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        tools:visibility="visible"
+        android:id="@+id/FavoriteLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:text="LEGISLATORS"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="30dp"
+            android:paddingLeft="30dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:id="@+id/textView41"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="BILLS"
+            android:textStyle="bold"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="30dp"
+            android:paddingLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/textView42" />
+
+        <TextView
+            android:text="COMMITTEES"
+            android:textStyle="bold"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="30dp"
+            android:paddingLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/textView43" />
+
+        <RelativeLayout
+            android:id="@+id/favlegrellay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textView41">
+        <RelativeLayout
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:id="@+id/asd"
+            >
+            <ListView
+            android:id="@+id/favlegview"
+            tools:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="16dp" />
+
+        </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="@color/gray"
+                android:layout_marginTop="14dp"
+                android:paddingTop="4dp"
+                android:layout_toRightOf="@+id/asd">
+
+                <ListView
+                    android:id="@+id/favlegsideview"
+                    android:divider="@android:color/transparent"
+                    android:dividerHeight="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+        <ListView
+            android:id="@+id/favbillview"
+            tools:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textView41"
+            android:visibility="invisible"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="16dp" />
+        <ListView
+            android:id="@+id/favcommview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible"
+            android:layout_below="@+id/textView41"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="16dp" />
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

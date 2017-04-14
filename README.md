@@ -15,6 +15,7 @@ There is an option on to the top right of the page where a user can mark that le
 
 There is a slide in-out menu where a user can navigate among the pages of Legislators, Bills, Committees and Favorites.
 Bills are divided into two major categories Active Bills i.e. bills that are active and New Bills i.e. bills that are not yet accepted in the congress. There are a lot of bills almost 4,000 in number which is very difficult for me to display them. Instead I fetched the top 50 bills and displayed them respectively.
+
 In the detail section of bills we have the name of the bill and its title. It also has details such as who the sponsored the bill and the date of induction along with url to its PDF document.
 There is also an option to mark the bill as a favorite.
 Committees are divided into three categories into House, Senate and Joint. As the names indicate the House committees are the committees that are organized by the house legislators. Similarly the Senate and Joint committees. In the details section it displays the id, Name of the committee and an option to mark it as a favorite.
@@ -25,6 +26,7 @@ In the Favorites as displayed, there are three tabs where each tab contains the 
 All the data is fetched from the Sun Light Congress API using the Rest Calls. This data is very huge in quantity, so I have used a server to remove the unnecessary fields keeping only the needed information.
 All the favorites are stored using SQLite Database.
 In order to display the list of data I have used the ListView component and populated with the data. I have also used an adapter for each section which made the development easier and quicker.
+
 In order to display the high resolution pictures without putting too much load on the main thread, I have used the Picasso plugin which helps fast loading of images and reduces the amount of load on the main thread. Picasso also helps in caching the images which is very useful in this case as all the images doesn’t change often.
 Data is fetched in the form of JSON which is parsed into an object with the help of GSON plugin which converts a JSON object into a user defined class.
 
